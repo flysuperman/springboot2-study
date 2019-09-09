@@ -1,9 +1,10 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Example user template template
-### Example user template
-
-# IntelliJ project files
+##ignore this file##
 .idea
 *.iml
-out
-gen
+.mvn/wrapper
+mvnw
+mvnw.cmd
+target
+HELP.md
+src/main/java/com/sailing/exceptiontest/common/constants/
+src/test/java/com/sailing/springboot/

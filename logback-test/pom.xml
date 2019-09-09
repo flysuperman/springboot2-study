@@ -3,6 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>com.sailing.springboot</groupId>
+        <artifactId>springboot2-study</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
     <groupId>com.sailing.springboot</groupId>
     <artifactId>logback-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -10,11 +16,6 @@
     <name>logback-test</name>
     <description>logback练习</description>
 
-    <parent>
-        <groupId>com.sailing.springboot</groupId>
-        <artifactId>springboot2-study</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
 
     <dependencies>
         <!-- 包含 mvc,aop 等jar资源 -->
