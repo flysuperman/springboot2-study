@@ -83,11 +83,6 @@
             <version>42.2.5</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.sailing.springboot</groupId>
-            <artifactId>common-tool</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
     <build>

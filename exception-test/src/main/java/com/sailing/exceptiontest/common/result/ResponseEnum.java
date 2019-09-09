@@ -18,6 +18,8 @@ public enum ResponseEnum {
     CONNECTION_ERROR("-004","网络连接请求失败！"),
     METHOD_NOT_ALLOWED("-005","不合法的请求方式"),
     NULL_PARAM_ERROR("-100","参数为空异常"),
+    SQL_INJECTION_ERROR("-101","输入参数存在sql注入风险"),
+    ILLEGAL_CHARACTER_ERROR("-102","非法字符错误"),
     ORTHER_ERROR("-300","其它异常");
     //数据响应码
     private String code;
