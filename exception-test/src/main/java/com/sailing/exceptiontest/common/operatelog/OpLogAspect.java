@@ -17,6 +17,7 @@ import sun.rmi.runtime.Log;
 
 import javax.sound.midi.Soundbank;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Auther: Administrator
@@ -40,6 +41,7 @@ public class OpLogAspect {
 
     @Around("pointCut()")
     public Object validate(ProceedingJoinPoint pjp) throws Throwable{
+        Stopwatch stopwatch = Stopwatch.createStarted();
         if (!enableLogFlag) {
             log.warn("日志切面：enableLog=false，不记录日志！");
             return pjp.proceed();
@@ -48,6 +50,8 @@ public class OpLogAspect {
         //检查参数
         checkRequestParam(pjp);
         Object result = pjp.proceed(pjp.getArgs());
+        Long consumeTime = stopwatch.stop().elapsed(TimeUnit.MILLISECONDS);
+        System.out.println("耗时:"+consumeTime);
         return result;
     }
 
